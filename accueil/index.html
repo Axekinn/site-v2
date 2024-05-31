@@ -1,46 +1,68 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Accueil</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../../site-v2/accueil/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../accueil/assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-			<div id="wrapper">
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-duotone fa-skull-crossbones"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Sélectionnez votre plateforme</h1>								
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a target="_blank" href="../pagejeux/switch.html">Switch</a></li>
-								<li><a target="_blank" href="../pagejeux/3ds.html">3DS</a></li>
-								<li><a target="_blank" href="../pagejeux/wiiu.html">Wii U</a></li>
-								<li><a target="_blank" href="../pagejeux/wii.html">Wii / GC</a></li>
-								<li><a target="_blank" href="../pagejeux/ds/index.html">DS</a></li>
-								<li><a target="_blank" href="https://rentry.co/epxb4dw7">PC</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
-					<footer id="footer">
-						<p class="copyright">&copy; 2024 tout droits réservé / <a target="_blank" href="https://discord.gg/sts-community-797781758841847808">Discord</a></p>
-					</footer>
-			</div>
-			<div id="bg"></div>	
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.3.1/lazyload.min.js"></script>
-            <script src="lazyload-init.js"></script>
-            <script src="/jeux/ds/inazumaeleven2tempetedeglace/assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="heheheha">
+        <meta name="author" content="STS">
+        <meta name="Email" content="no-reply@stosbaby.fr">
+        <meta name="Official website" content="https://stosbaby.fr/">
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>Accueil</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:400,600,700" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/demo.css" rel="stylesheet">
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="80">
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <div class="buy-button">
+                    <a href="https://discord.gg/sts-community-797781758841847808" target="_blank">
+                        <span class="btn btn-primary d-none d-md-inline-block">Discord</span>
+                        <span class="btn btn-icon btn-primary d-inline-flex d-md-none ms-1"><i class="mdi mdi-cart-outline"></i></span>
+                    </a>
+                </div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light" id="navmenu-nav">
+                        <li class="has-submenu">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a target="_blank" href="https://linktr.ee/stosbaby">Me contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="bg-home-half bg-light" style="background: url('assets/images/bg.jpg') center;" id="home">
+            <div class="bg-overlay "></div>
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container">
+                        <div class="row mt-5 justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="section-title text-center">
+                                    <h2 class="text-uppercase text-white my-5">Choisis ta plateforme</h2>
+                                    <div> 
+                                        <a target="_blank" href="../pagejeux/3ds.html" class="btn btn-primary mouse-down mx-1">Nintendo 3DS</a>
+                                        <a target="_blank" href="../pagejeux/switch.html" class="btn btn-primary mouse-down mx-1">Nintendo Switch</a>
+                                        <a target="_blank" href="../pagejeux/wii.html" class="btn btn-primary mouse-down mx-1">Nintendo Wii / Gamecube</a>
+                                        <a target="_blank" href="../pagejeux/wiiu.html" class="btn btn-primary mouse-down mx-1">Nintendo Wii U</a>
+                                        <a target="_blank" href="../pagejeux/ds.html" class="btn btn-primary mouse-down mx-1">Nintendo DS</a>
+                                        <a target="_blank" href="https://rentry.co/epxb4dw7" class="btn btn-primary mouse-down mx-1">PC</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="/jeux/ds/inazumaeleven2tempetedeglace/assets/js/jquery.min.js"></script>
+    </body>
 </html>
