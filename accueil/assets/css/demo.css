@@ -469,6 +469,15 @@ a.text-custom:hover {
   background: #5a5757;
 }
 
+/* Assurez-vous que la section de l'arrière-plan couvre toute la hauteur de l'écran */
+.bg-home-full {
+  background: url('//accueil/assets/images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* Si vous avez besoin de régler le style de la superposition */
 .bg-overlay {
   background-color: rgba(35, 37, 47, 0.8);
   position: absolute;
@@ -477,8 +486,9 @@ a.text-custom:hover {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
+
 
 .bg-gradient-primary {
   background: linear-gradient(to left, #fbbf24 0%, #c026d3 100%);
