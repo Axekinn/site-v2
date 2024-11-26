@@ -382,4 +382,15 @@
 
 			})();
 
+			/* disclaimer 
+document.addEventListener('DOMContentLoaded', function() {
+    const disclaimer = document.getElementById('disclaimer');
+    const closeBtn = document.getElementById('closeDisclaimer');
+
+    closeBtn.addEventListener('click', function() {
+        disclaimer.style.display = 'none';
+    });
+});*/
+
+
 })(jQuery);
