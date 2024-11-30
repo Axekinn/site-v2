@@ -834,3 +834,19 @@ input, select, textarea {
 				}
 
 		}
+
+		/* Style de la barre de recherche */
+#searchInput {
+	width: 100%;
+	max-width: 400px;
+	padding: 10px 15px;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 25px;
+	outline: none;
+	transition: border-color 0.3s;
+  }
+  
+  #searchInput:focus {
+	border-color: #007BFF;
+  }
