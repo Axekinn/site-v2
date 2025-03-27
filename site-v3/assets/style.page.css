@@ -526,7 +526,7 @@
 :root {
     --vp-local-search-bg: var(--vp-c-bg);
     --vp-local-search-result-bg: var(--vp-c-bg);
-    --vp-local-search-result-border: var(--vp-c-divider);
+    --vp-local-search-result-border: var (--vp-c-divider);
     --vp-local-search-result-selected-bg: var(--vp-c-bg);
     --vp-local-search-result-selected-border: var(--vp-c-brand-1);
     --vp-local-search-highlight-bg: var(--vp-c-brand-1);
@@ -918,7 +918,7 @@ mjx-container>svg {
 }
 
 .custom-block.note {
-    border-color: var(--vp-custom-block-note-border);
+    border-color: var (--vp-custom-block-note-border);
     color: var(--vp-custom-block-note-text);
     background-color: var(--vp-custom-block-note-bg)
 }
@@ -6521,3 +6521,151 @@ svg.DocSearch-Hit-Select-Icon {
   margin-top: 3rem;
 }
 
+/* Ajustement du header et de la navigation pour aligner les hauteurs */
+.VPNavBar {
+  height: var(--vp-nav-height); /* Assure une hauteur uniforme */
+  overflow: hidden; /* Empêche tout débordement */
+}
+
+/* Confiner les effets des liens de navigation dans le conteneur */
+.VPNavBarMenu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Ajuster la position et confinement de l'effet de flou */
+.VPNavBarMenuLink::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  transform: translateY(0); /* Empêche tout débordement vertical */
+}
+
+/* Réparer spécifiquement la hauteur de la barre de navigation */
+.wrapper {
+  height: var(--vp-nav-height);
+  overflow: hidden; /* Contenir tout débordement */
+}
+
+/* Assurer que les conteneurs internes respectent aussi la hauteur */
+.container, .content, .content-body {
+  height: 100%;
+}
+
+/* S'assurer que le menu et les liens sont alignés verticalement */
+.VPNavBarMenuLink {
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Contenir les effets */
+}
+
+/* Réduction de la hauteur du header */
+:root {
+    --vp-nav-height: 56px; /* Réduit de 64px à 56px */
+  }
+
+  /* Ajustement du header et de la navigation */
+.VPNavBar {
+    height: var(--vp-nav-height);
+    overflow: hidden;
+  }
+
+  /* Optimisation des liens de navigation */
+.VPNavBarMenuLink {
+    padding: 6px 14px !important; /* Réduction du padding */
+    margin: 0 3px;
+    font-size: 13px; /* Texte légèrement plus petit */
+  }
+
+  /* Ajustement vertical des éléments dans le menu */
+.VPNavBarMenu {
+    padding: 6px;
+  }
+
+
+  /* ...existing code... */
+
+/* Styles pour la barre de recherche */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .search-input {
+    width: 100%;
+    height: 36px;
+    padding: 0 40px 0 16px;
+    border-radius: 18px;
+    border: 2px solid var(--vp-c-divider);
+    background-color: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-1);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .search-input:focus {
+    border-color: var(--vp-c-brand-1);
+    box-shadow: 0 0 0 3px rgba(var(--vp-c-brand-1-rgb), 0.1);
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  
+  .search-button:hover {
+    background-color: var(--vp-c-brand-soft);
+  }
+  
+  .search-icon {
+    font-size: 16px;
+    opacity: 0.7;
+  }
+  
+  /* Responsive : masquer la barre de recherche sur petits écrans */
+  @media (max-width: 768px) {
+    .search-container {
+      display: none;
+    }
+    
+    /* Ajouter une icône de recherche mobile */
+    .mobile-search-icon {
+      display: block;
+      margin-right: 12px;
+      font-size: 18px;
+      color: var(--vp-c-text-1);
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .mobile-search-icon {
+      display: none;
+    }
+  }
+  /* ...existing code... */
