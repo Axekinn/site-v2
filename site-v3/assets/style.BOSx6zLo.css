@@ -4043,7 +4043,7 @@ html[data-theme=dark] {
 
 .DocSearch-Hit-Container {
     align-items: center;
-    color: var(--docsearch-hit-color);
+    color: var (--docsearch-hit-color);
     display: flex;
     flex-direction: row;
     height: var(--docsearch-hit-height);
@@ -5818,4 +5818,312 @@ svg.DocSearch-Hit-Select-Icon {
 
 .DocSearch {
     --docsearch-primary-color: var(--vp-c-brand-1) !important
+}
+
+/* Style amélioré pour les boutons de plateforme sur la page d'accueil */
+.VPFeatures .grid-4.item {
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.VPFeatures .grid-4.item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Style pour les cartes de plateforme */
+.VPFeatures .grid-4.item article.box {
+  border-radius: 16px;
+  position: relative;
+  background: linear-gradient(135deg, var(--vp-c-bg-soft), var(--vp-c-bg));
+  border: none;
+  padding: 24px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Effet de bord lumineux au survol */
+.VPFeatures .grid-4.item article.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.VPFeatures .grid-4.item:hover article.box::before {
+  opacity: 1;
+}
+
+/* Style pour les images de plateforme */
+.VPFeatures .grid-4.item .VPImage {
+  width: 96px !important;
+  height: 96px !important;
+  margin: 0 auto 16px;
+  object-fit: contain;
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.VPFeatures .grid-4.item:hover .VPImage {
+  transform: scale(1.1);
+}
+
+/* Style pour les titres */
+.VPFeatures .grid-4.item .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 8px 0;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: all 0.4s ease;
+}
+
+.VPFeatures .grid-4.item:hover .title {
+  transform: scale(1.05);
+}
+
+/* Style pour les descriptions */
+.VPFeatures .grid-4.item .details {
+  font-size: 1rem;
+  margin-top: 8px;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+
+.VPFeatures .grid-4.item:hover .details {
+  opacity: 1;
+}
+
+/* Styles spécifiques pour différentes plateformes */
+/* Nintendo Switch */
+.VPFeatures .grid-4.item a[href*="switch"] article.box::before {
+  background: linear-gradient(135deg, #e60012, #1da0c3);
+}
+
+.VPFeatures .grid-4.item a[href*="switch"] .title {
+  background: linear-gradient(135deg, #e60012, #1da0c3);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* PlayStation */
+.VPFeatures .grid-4.item a[href*="ps3"] article.box::before {
+  background: linear-gradient(135deg, #003087, #00a7e0);
+}
+
+.VPFeatures .grid-4.item a[href*="ps3"] .title {
+  background: linear-gradient(135deg, #003087, #00a7e0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Xbox */
+.VPFeatures .grid-4.item a[href*="xbox"] article.box::before {
+  background: linear-gradient(135deg, #107c10, #5dc21e);
+}
+
+.VPFeatures .grid-4.item a[href*="xbox"] .title {
+  background: linear-gradient(135deg, #107c10, #5dc21e);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Nintendo Wii */
+.VPFeatures .grid-4.item a[href*="wii"]:not([href*="wiiu"]) article.box::before {
+  background: linear-gradient(135deg, #8c8c8c, #e0e0e0);
+}
+
+.VPFeatures .grid-4.item a[href*="wii"]:not([href*="wiiu"]) .title {
+  background: linear-gradient(135deg, #8c8c8c, #e0e0e0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* GameCube */
+.VPFeatures .grid-4.item a[href*="gamecube"] article.box::before {
+  background: linear-gradient(135deg, #6a5fbb, #b2a8e5);
+}
+
+.VPFeatures .grid-4.item a[href*="gamecube"] .title {
+  background: linear-gradient(135deg, #6a5fbb, #b2a8e5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* DS */
+.VPFeatures .grid-4.item a[href*="ds"] article.box::before {
+  background: linear-gradient(135deg, #444, #00b5ff);
+}
+
+.VPFeatures .grid-4.item a[href*="ds"] .title {
+  background: linear-gradient(135deg, #444, #00b5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* PC */
+.VPFeatures .grid-4.item a[href*="ankergames"] article.box::before {
+  background: linear-gradient(135deg, #444, #888);
+}
+
+.VPFeatures .grid-4.item a[href*="ankergames"] .title {
+  background: linear-gradient(135deg, #444, #888);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Animation au clic */
+.VPFeatures .grid-4.item:active {
+  transform: translateY(-2px);
+}
+
+/* Responsive pour différentes tailles d'écran */
+@media (max-width: 768px) {
+  .VPFeatures .grid-4.item {
+    width: calc(50% - 16px) !important;
+  }
+  
+  .VPFeatures .grid-4.item .VPImage {
+    width: 72px !important;
+    height: 72px !important;
+  }
+  
+  .VPFeatures .grid-4.item .title {
+    font-size: 1.2rem;
+  }
+  
+  .VPFeatures .grid-4.item .details {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPFeatures .grid-4.item {
+    width: 100% !important;
+  }
+}
+
+/* Style amélioré pour les boutons d'action sur la page d'accueil */
+.VPButton {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 20px !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none !important;
+}
+
+/* Effet de lueur/pulsation sur les boutons */
+.VPButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  transform: translateX(-100%);
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 1;
+}
+
+.VPButton:hover::before {
+  transform: translateX(100%);
+}
+
+/* Style pour le bouton principal/brand (Discord) */
+.VPButton.brand {
+  background: linear-gradient(45deg, #5865F2, #7289DA) !important;
+  color: white !important;
+  transform: translateY(0);
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(88, 101, 242, 0.4);
+}
+
+/* Style pour les boutons secondaires */
+.VPButton.alt {
+  background: linear-gradient(45deg, #2a2c3c, #3f4159) !important;
+  color: white !important;
+  transform: translateY(0);
+}
+
+.VPButton.alt:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(45deg, #3f4159, #2a2c3c) !important;
+}
+
+/* Effet au clic */
+.VPButton:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles spécifiques pour chaque bouton */
+.VPButton[href*="discord"] {
+  background: linear-gradient(45deg, #5865F2, #7289DA) !important;
+}
+
+.VPButton[href*="faq"] {
+  background: linear-gradient(45deg, #FF9966, #FF5E62) !important;
+}
+
+.VPButton[href*="politics"] {
+  background: linear-gradient(45deg, #56CCF2, #2F80ED) !important;
+}
+
+.VPButton[href*="terms"] {
+  background: linear-gradient(45deg, #4776E6, #8E54E9) !important;
+}
+
+.VPButton[href*="linktr"] {
+  background: linear-gradient(45deg, #11998e, #38ef7d) !important;
+}
+
+/* Disposition des boutons */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.action {
+  margin: 0 !important;
+}
+
+/* Media query pour les appareils mobiles */
+@media (max-width: 640px) {
+  .VPButton {
+    font-size: 14px;
+    padding: 10px 16px !important;
+  }
+  
+  .actions {
+    gap: 8px;
+  }
 }
