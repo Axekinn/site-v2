@@ -66,8 +66,40 @@ document.addEventListener('DOMContentLoaded', function() {
     paginationLinks.forEach(link => {
       link.addEventListener('click', handlePaginationClick);
     });
-  });
+
+    // Trouve la page active
+    const activePage = document.querySelector('.pagination a.active');
+    
+    if (activePage) {
+        // Obtient le numéro de page actuel depuis le href
+        const currentPageHref = activePage.getAttribute('href');
+        const currentPageNumber = parseInt(currentPageHref.replace('.html', ''));
+        
+        // Trouve le bouton "Next" et le bouton "Prev"
+        const nextButton = document.getElementById('next-page');
+        const prevButton = document.getElementById('prev-page');
+        
+        // Met à jour le bouton "Suivant"
+        if (nextButton) {
+            // Définit la page suivante comme étant la page actuelle + 1
+            const nextPageNumber = currentPageNumber + 1;
+            nextButton.setAttribute('href', nextPageNumber + '.html');
+        }
+        
+        // Met à jour le bouton "Retour"
+        if (prevButton) {
+            // Définit la page précédente comme étant la page actuelle - 1
+            // Ne pas aller en dessous de la page 1
+            const prevPageNumber = Math.max(1, currentPageNumber - 1);
+            prevButton.setAttribute('href', prevPageNumber + '.html');
+            
+            // Masquer le bouton "Retour" sur la page 1
+            if (currentPageNumber === 1) {
+                prevButton.style.visibility = 'hidden';
+            }
+        }
+    }
+});
 
 
 
-  
