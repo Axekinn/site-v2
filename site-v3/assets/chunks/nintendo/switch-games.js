@@ -580,5 +580,173 @@ const switchGames = [
     "details": "Version 1.3.0 + DLC",
     "url": "../../../nintendo/shin-megami-tensei-v-vengeance.html",
     "image": "../../../assets/images/nintendo/shin-megami-tensei-v-vengeance-box.PNG"
+  },
+  {
+    "title": "Sid Meiers Civilization VII",
+    "details": "Version 1.0.2 + DLC",
+    "url": "../../../nintendo/sid-meiers-civilization-vii.html",
+    "image": "../../../assets/images/nintendo/sid-meiers-civilization-vii-box.png"
+  },
+  {
+    "title": "Splatoon 2",
+    "details": "Version 5.5.1 + DLC",
+    "url": "../../../nintendo/splatoon-2.html",
+    "image": "../../../assets/images/nintendo/splatoon-2-box.jpg"
+  },
+  {
+    "title": "Splatoon 3",
+    "details": "Version 9.2.0 + DLC",
+    "url": "../../../nintendo/splatoon-3.html",
+    "image": "../../../assets/images/nintendo/splatoon-3-box.jpg"
+  },
+  {
+    "title": "Sonic Frontiers",
+    "details": "Version 1.4.1 + DLC",
+    "url": "../../../nintendo/sonic-frontiers.html",
+    "image": "../../../assets/images/nintendo/sonic-frontiers-box.jpg"
+  },
+  {
+    "title": "Stray",
+    "details": "Version 1.6.0",
+    "url": "../../../nintendo/stray.html",
+    "image": "../../../assets/images/nintendo/stray-box.webp"
+  },
+  {
+    "title": "SUPER DRAGON BALL HEROES WORLD MISSION",
+    "details": "Version 1.05.01 + DLC",
+    "url": "../../../nintendo/super-dragon-ball-heroes-world-mission.html",
+    "image": "../../../assets/images/nintendo/super-dragon-ball-heroes-world-mission-box.jpg"
+  },
+  {
+    "title": "Super Mario 3D All Stars",
+    "details": "Version 1.1.1",
+    "url": "../../../nintendo/super-mario-3d-all-stars.html",
+    "image": "../../../assets/images/nintendo/super-mario-3d-all-stars-box.jpg"
+  },
+  {
+    "title": "Super Mario 3D World + Bowser’s Fury",
+    "details": "Version 1.1.0",
+    "url": "../../../nintendo/super-mario-3d-world-bowsers-fury.html",
+    "image": "../../../assets/images/nintendo/super-mario-3d-world-bowsers-fury-box.jpg"
+  },
+  {
+    "title": "Super Mario Bros Wonder",
+    "details": "Version 1.0.1",
+    "url": "../../../nintendo/super-mario-bros-wonder.html",
+    "image": "../../../assets/images/nintendo/super-mario-bros-wonder-box.jpg"
+  },
+  {
+    "title": "Super Mario Maker 2",
+    "details": "Version 3.0.3",
+    "url": "../../../nintendo/super-mario-maker-2.html",
+    "image": "../../../assets/images/nintendo/super-mario-maker-2-box.jpg"
+  },
+  {
+    "title": "Super Mario Odyssey",
+    "details": "Version 1.3.0",
+    "url": "../../../nintendo/super-mario-odyssey.html",
+    "image": "../../../assets/images/nintendo/super-mario-odyssey-box.jpg"
+  },
+  {
+    "title": "Super Mario Party Jamboree",
+    "details": "Version 1.1.1",
+    "url": "../../../nintendo/super-mario-party-jamboree.html",
+    "image": "../../../assets/images/nintendo/super-mario-party-jamboree-box.jpg"
+  },
+  {
+    "title": "Super Mario RPG",
+    "details": "Version 1.0.1",
+    "url": "../../../nintendo/super-mario-rpg.html",
+    "image": "../../../assets/images/nintendo/super-mario-rpg-box.jpg"
+  },
+  {
+    "title": "Super Smash Bros Ultimate",
+    "details": "Version 13.0.2 + DLC",
+    "url": "../../../nintendo/super-smash-bros-ultimate.html",
+    "image": "../../../assets/images/nintendo/super-smash-bros-ultimate-box.jpg"
+  },
+  {
+    "title": "Stardew Valley",
+    "details": "Version 1.6.9.40",
+    "url": "../../../nintendo/stardew-valley.html",
+    "image": "../../../assets/images/nintendo/stardew-valley-box.jpg"
+  },
+  {
+    "title": "The Escapists 2",
+    "details": "Version 1.0.3 + DLC",
+    "url": "../../../nintendo/the-escapists-2.html",
+    "image": "../../../assets/images/nintendo/the-escapists-2-box.jpeg"
+  },
+  {
+    "title": "The Legend Of Zelda: Breath Of The Wild",
+    "details": "Version 1.6.0 + DLC",
+    "url": "../../../nintendo/the-legends-of-zelda-breath-of-the-wild.html",
+    "image": "../../../assets/images/nintendo/the-legends-of-zelda-breath-of-the-wild-box.jpg"
+  },
+  {
+    "title": "The Legend of Zelda: Link’s Awakening",
+    "details": "Version 1.0.1",
+    "url": "../../../nintendo/the-legend-of-zelda-links-awakening.html",
+    "image": "../../../assets/images/nintendo/the-legend-of-zelda-links-awakening-box.jpg"
+  },
+  {
+    "title": "The Legend of Zelda: Skyward Sword HD",
+    "details": "Version 1.0.1",
+    "url": "../../../nintendo/the-legend-of-zelda-skyward-sword-hd.html",
+    "image": "../../../assets/images/nintendo/the-legend-of-zelda-skyward-sword-hd-box.jpg"
+  },
+  {
+    "title": "The Legend of Zelda: Echoes of Wisdom",
+    "details": "Version 1.0.1",
+    "url": "../../../nintendo/the-legend-of-zelda-echoes-of-wisdom.html",
+    "image": "../../../assets/images/nintendo/the-legend-of-zelda-echoes-of-wisdom-box.jpg"
+  },
+  {
+    "title": "Tomb Raider IV-VI Remastered",
+    "details": "Version 1.01",
+    "url": "../../../nintendo/tomb-raider-iv-vi-remastered.html",
+    "image": "../../../assets/images/nintendo/tomb-raider-iv-vi-remastered-box.jpg"
+  },
+  {
+    "title": "Tricky Towers",
+    "details": "Version 1.0.2 + DLC",
+    "url": "../../../nintendo/tricky-towers.html",
+    "image": "../../../assets/images/nintendo/tricky-towers-box.jpg"
+  },
+  {
+    "title": "Xenoblade Chronicles Definitive Edition",
+    "details": "Version 1.1.2",
+    "url": "../../../nintendo/xenoblade-definitive-edition.html",
+    "image": "../../../assets/images/nintendo/xenoblade-chronicles-x-definitive-edition-box.jpg"
+  },
+  {
+    "title": "Xenoblade Chronicles 2 Torna The Golden Country",
+    "details": "Version 2.1.0 + DLC",
+    "url": "../../../nintendo/xenoblade-chronicles-2-torna-the-golden-country.html",
+    "image": "../../../assets/images/nintendo/xenoblade-chronicles-2-torna-the-golden-country-box.jpg"
+  },
+  {
+    "title": "Xenoblade Chronicles 3",
+    "details": "Version 2.2.0 + DLC",
+    "url": "../../../nintendo/xenoblade-chronicles-3.html",
+    "image": "../../../assets/images/nintendo/xenoblade-chronicles-3-box.jpg"
+  },
+  {
+    "title": "Yo-Kai Watch 1",
+    "details": "Version 1.3.0",
+    "url": "../../../nintendo/yo-kai-watch-1.html",
+    "image": "../../../assets/images/nintendo/yo-kai-watch-1-box.jpg"
+  },
+  {
+    "title": "Yo-Kai Watch 4 PuraPura",
+    "details": "Version 2.2.0 + DLC",
+    "url": "../../../nintendo/yo-kai-watch-4-plus-plus-purapura.html",
+    "image": "../../../assets/images/nintendo/yo-kai-watch-4-plus-plus-purapura-box.jpg"
+  },
+  {
+    "title": "Yo-Kai Watch 4 We Are Looking At The Same Sky",
+    "details": "Version 2.2.0",
+    "url": "../../../nintendo/yo-kai-watch-4-we-are-looking-at-the-same-sky.html",
+    "image": "../../../assets/images/nintendo/yo-kai-watch-4-we-are-looking-at-the-same-sky-box.jpg"
   }
 ];
