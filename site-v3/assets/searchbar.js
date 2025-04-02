@@ -17,11 +17,40 @@ document.addEventListener('DOMContentLoaded', function() {
   function loadGamesData() {
     console.log("Chargement des données de jeux...");
     
-    // 1. Essayer d'accéder à la variable switchGames définie dans switch-games.js
+    // Réinitialiser le tableau des jeux
+    allGames = [];
+    
+    // 1. Vérifier et charger les jeux Switch
     if (typeof switchGames !== 'undefined') {
-      allGames = switchGames;
-      console.log(`${allGames.length} jeux chargés depuis le fichier externe`);
-    } 
+      allGames = allGames.concat(switchGames);
+      console.log(`${switchGames.length} jeux Switch chargés`);
+    }
+    
+    // 2. Vérifier et charger les jeux Xbox 360
+    if (typeof xbox360Games !== 'undefined') {
+      allGames = allGames.concat(xbox360Games);
+      console.log(`${xbox360Games.length} jeux Xbox 360 chargés`);
+    }
+    
+    // 3. Vérifier et charger les jeux Xbox 360 page 2 (si applicable)
+    if (typeof xbox360GamesPage2 !== 'undefined') {
+      allGames = allGames.concat(xbox360GamesPage2);
+      console.log(`${xbox360GamesPage2.length} jeux Xbox 360 (page 2) chargés`);
+    }
+    
+    // 4. Vérifier et charger les jeux Xbox 360 page 3 (si applicable)
+    if (typeof xbox360GamesPage3 !== 'undefined') {
+      allGames = allGames.concat(xbox360GamesPage3);
+      console.log(`${xbox360GamesPage3.length} jeux Xbox 360 (page 3) chargés`);
+    }
+    
+    // Ajouter d'autres plateformes de jeux ici selon le même modèle
+    // Par exemple :
+    // if (typeof ds3dsGames !== 'undefined') {
+    //   allGames = allGames.concat(ds3dsGames);
+    // }
+    
+    console.log(`Total : ${allGames.length} jeux chargés depuis tous les fichiers externes`);
   }
   
   // Fonction de recherche simplifiée
