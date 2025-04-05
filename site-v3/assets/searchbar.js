@@ -26,22 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(`${switchGames.length} jeux Switch chargés`);
     }
     
-    // 2. Vérifier et charger les jeux Xbox 360
-    if (typeof xbox360Games !== 'undefined') {
-      allGames = allGames.concat(xbox360Games);
-      console.log(`${xbox360Games.length} jeux Xbox 360 chargés`);
-    }
-    
-    // 3. Vérifier et charger les jeux Xbox 360 page 2 (si applicable)
-    if (typeof xbox360GamesPage2 !== 'undefined') {
-      allGames = allGames.concat(xbox360GamesPage2);
-      console.log(`${xbox360GamesPage2.length} jeux Xbox 360 (page 2) chargés`);
-    }
-    
-    // 4. Vérifier et charger les jeux Xbox 360 page 3 (si applicable)
-    if (typeof xbox360GamesPage3 !== 'undefined') {
-      allGames = allGames.concat(xbox360GamesPage3);
-      console.log(`${xbox360GamesPage3.length} jeux Xbox 360 (page 3) chargés`);
+    // 2. Vérifier et charger les jeux Wii
+    if (typeof wiiGames !== 'undefined') {
+      allGames = allGames.concat(wiiGames);
+      console.log(`${wiiGames.length} jeux Nintendo Wii chargés`);
     }
     
     // Ajouter d'autres plateformes de jeux ici selon le même modèle

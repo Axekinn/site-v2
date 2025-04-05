@@ -8,8 +8,8 @@ const switchGames = [
   {
     "title": "Animal Crossing New Horizon",
     "details": "Version 2.0.6 + DLC",
-    "url": "../../nintendo/animal-crossing-new-horizon.html",
-    "image": "../../assets/images/nintendo/switch/animal-crossing-new-horizons-box.jpg"
+    "url": "../../../nintendo/switch/animal-crossing-new-horizon.html",
+    "image": "../../../assets/images/nintendo/switch/animal-crossing-new-horizons-box.jpg"
   },
   {
     "title": "Ark Survival Evolved",
