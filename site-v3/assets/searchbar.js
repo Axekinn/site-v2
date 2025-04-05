@@ -17,11 +17,28 @@ document.addEventListener('DOMContentLoaded', function() {
   function loadGamesData() {
     console.log("Chargement des données de jeux...");
     
-    // 1. Essayer d'accéder à la variable switchGames définie dans switch-games.js
+    // Réinitialiser le tableau des jeux
+    allGames = [];
+    
+    // 1. Vérifier et charger les jeux Switch
     if (typeof switchGames !== 'undefined') {
-      allGames = switchGames;
-      console.log(`${allGames.length} jeux chargés depuis le fichier externe`);
-    } 
+      allGames = allGames.concat(switchGames);
+      console.log(`${switchGames.length} jeux Switch chargés`);
+    }
+    
+    // 2. Vérifier et charger les jeux Wii
+    if (typeof wiiGames !== 'undefined') {
+      allGames = allGames.concat(wiiGames);
+      console.log(`${wiiGames.length} jeux Nintendo Wii chargés`);
+    }
+    
+    // Ajouter d'autres plateformes de jeux ici selon le même modèle
+    // Par exemple :
+    // if (typeof ds3dsGames !== 'undefined') {
+    //   allGames = allGames.concat(ds3dsGames);
+    // }
+    
+    console.log(`Total : ${allGames.length} jeux chargés depuis tous les fichiers externes`);
   }
   
   // Fonction de recherche simplifiée
