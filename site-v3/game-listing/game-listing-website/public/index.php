@@ -38,7 +38,7 @@ ob_start();
           <p class="tagline" data-v-4f9c455b>Choisis la plateforme de ton jeu</p>
           <div class="actions" data-v-4f9c455b>
             <div class="action" data-v-4f9c455b>
-              <a class="VPButton medium brand" href="https://discord.gg/emulationfr" target="_blank" rel="noreferrer" data-v-4f9c455b>Discord 💬</a>
+              <a class="VPButton medium brand" href="https://discord.com/invite/axekin" target="_blank" rel="noreferrer" data-v-4f9c455b>Discord 💬</a>
             </div>
             <div class="action" data-v-4f9c455b>
               <a class="VPButton medium alt" href="faq.html" rel="noreferrer" data-v-4f9c455b>FAQ ❓</a>
